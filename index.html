@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            
+           
+
+            <div class="inputBox">
+                <label for="Name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" id="emailid" placeholder="Your Email....." />
+            </div>
+
+            <div class="inputBox">
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" id="msgContent"  placeholder="Message">
+            </div>
+
+             <!--NUMBER-->
+             <div class="inputBox">
+                <label for="number"><b>Phone Number</b></label>
+                <br>
+               <select name="phoneCode" required>
+                <option selected hidden value="">Code</option>
+                <option value="66">+91</option>
+                <option value="66">+99</option>
+                <option value="66">+90</option>
+                <option value="66">+66</option>
+               </select>
+               <input type="number" id="phone" name="phone" placeholder="Enter number" required>
+               <br>
+            </div>
+            <br>
+
+            <!--COURSE-->
+            <div class="inputBox">
+                <label for="course"><b>course</b></label>
+                <br>
+                <!--LIST OF COURSES-->
+                <select  id="course" classname="course" required>
+                 <option selected hidden value=""><b>courses</b></option>
+                 <option value="66">1</option>
+                 <option value="66">2</option>
+                 <option value="66">3</option>
+                 <option value="66"> 4</option>
+                 </select>
+                 <!--LANGUAGE-->
+                 <input type="phone" id="couse" name="examname" placeholder="Enter Language " required>
+                 <br>
+            </div>
+            <br>
+
+             <!--DATE OF BIRTH-->
+            <div class="inputBox">
+                <label type="date" placeholder="dd/mm/yyyy" required><b>Date of birth</b></label>
+            <br>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <br>
+            </div>
+            <br>
+
+
+
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="mail.js"></script>
+</body>
+
+</html>
