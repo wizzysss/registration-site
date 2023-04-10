@@ -1,150 +1,99 @@
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    width: 90%;
-    height: 60vh;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-.inputBox{
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.inputBox input[type="text"], .inputBox input[type="email"]{
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 0px 10px;
-    font-size: 16px;
-    color: #444;
-}
-
-.inputBox textarea{
-    width: 100%;
-    height: 120px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 0px 10px;
-    font-size: 16px;
-    color: #444;
-}
-
-.inputBox button{
-    width: 100%;    
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background: rgb(0, 119, 255);
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    
-}
-
-.inputBox button:hover{
-    background: rgb(0, 17, 255);
-    transition: all 0.3s ease;
-}
-
-::placeholder{
-    font-size: 16px;
-}
-
-.alert{
-    width: 100%;
-    background: rgb(0, 255, 106);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    display: none;
-}
-*/
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');*/
 
 body {
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-    background-color:#f7f7f7;
-  }
-  * {box-sizing: border-box}
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  background-color:#f7f7f7;
+}
+* {box-sizing: border-box}
+
+/* Add padding to container elements */
+.container {
   
-  /* Add padding to container elements */
-  .container {
-    
-      padding: 20px;
-        width:1000px;
-      position: absolute;
-      left: 50%;
-      top: 70%;
-      transform: translate(-50%, -50%);
-        border:1px solid #ccc;
-        border-radius:10px;
-        background:white;
-    -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    padding: 20px;
+      width:1000px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
   }
-  select {
-    width: 18%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-  }
-  
-  input[type=phone] {
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=email] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+
+button{
+  background-color: rgb(148, 219, 42);
+  color: white;
+  padding: 14px 20px;
+  border-radius:10px ;
+
+}
+
+button:hover {
+  opacity:1;
+}
+
+#birthday{
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+
+}
+
+input[type=number] {
     width: 81%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -153,67 +102,84 @@ body {
     background: #f7f7f7;
   }
 
-  input[type=email] {
-    width: 81%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
+
+/* Responsive Form CSS */
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  /* Center align the form */
+  .container {
+    margin: auto;
+    width: 90%;
   }
   
-  
-  
-  input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
-    background-color: #ddd;
-    outline: none;
+  /* Adjust font size for better readability */
+  label, input, select, option {
+    font-size: 16px;
   }
   
+  /* Adjust height of input boxes */
+  .inputBox {
+    height: 80px;
+  }
   
-  
-  /* Set a style for all buttons 
-  button {
-    background-color: rgb(148, 219, 42);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+  /* Adjust width of input boxes */
+  input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="phone"], select {
     width: 100%;
-    opacity: 0.9;
-    font-size:16px;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-    border-radius:10px;
-  }*/
-  
-  button{
-    background-color: rgb(148, 219, 42);
-    color: white;
-    padding: 14px 20px;
-    border-radius:10px ;
-  
   }
   
-  button:hover {
-    opacity:1;
+  /* Adjust margin and padding for better spacing */
+  label {
+    margin-bottom: 5px;
   }
   
-  #birthday{
-    width: 81%;
+  input, select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Adjust button width */
+  button {
+    width: 100%;
+  }
+}
+
+/* For tablets and larger devices */
+@media (min-width: 481px) {
+  /* Center align the form */
+  .container {
+    margin: auto;
+    width: 70%;
+  }
+  
+  /* Adjust font size for better readability */
+  label, input, select, option {
+    font-size: 18px;
+  }
+  
+  /* Adjust height of input boxes */
+  .inputBox {
+    height: 100px;
+  }
+  
+  /* Adjust margin and padding for better spacing */
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    margin-bottom: 20px;
     padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-  
+    border-radius: 10px;
   }
   
-  input[type=number] {
-      width: 81%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      display: inline-block;
-      border: none;
-      background: #f7f7f7;
-    }
-  
+  /* Adjust button width */
+  button {
+    width: 50%;
+  }
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
