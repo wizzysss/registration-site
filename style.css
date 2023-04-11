@@ -7,7 +7,7 @@ body {
 
 /* Add padding to container elements */
 .container {
-  
+ 
     padding: 20px;
       width:1000px;
     position: absolute;
@@ -30,7 +30,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: none;
   background: #f7f7f7;
-  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  font-family: monospace;
 }
 select {
   width: 18%;
@@ -39,7 +39,7 @@ select {
   display: inline-block;
   border: none;
   background: #f7f7f7;
-  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  font-family: monospace;
 }
 
 input[type=phone] {
@@ -183,3 +183,4 @@ input[type=number] {
 button:hover {
   background-color: #3e8e41;
 }
+
