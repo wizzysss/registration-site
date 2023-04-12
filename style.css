@@ -1,6 +1,6 @@
 
 body {
-  font-family: Montserrat,Arial, Helvetica, sans-serif;
+  font-family: monospace;
   background-color:#f7f7f7;
 }
 * {box-sizing: border-box}
@@ -12,7 +12,7 @@ body {
       width:1000px;
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 85%;
     transform: translate(-50%, -50%);
       border:1px solid #ccc;
       border-radius:10px;
@@ -33,7 +33,18 @@ input[type=text], input[type=password] {
   font-family: monospace;
 }
 select {
-  width: 18%;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: monospace;
+  
+}
+
+input[type=phone] {
+  width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -42,22 +53,14 @@ select {
   font-family: monospace;
 }
 
-input[type=phone] {
-  width: 81%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f7f7f7;
-}
-
 input[type=email] {
-  width: 81%;
+  width:100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f7f7f7;
+  font-family: monospace;
 }
 
 
@@ -65,6 +68,7 @@ input[type=email] {
 input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
   background-color: #ddd;
   outline: none;
+  font-family: monospace;
 }
 
 
@@ -183,4 +187,20 @@ input[type=number] {
 button:hover {
   background-color: #3e8e41;
 }
+
+
+
+.navbar-brand img {
+  height: 52px;
+  width: auto;
+  display: flex;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+
+
+
+
 
