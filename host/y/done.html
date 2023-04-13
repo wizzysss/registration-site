@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam Registration Submitted</title>
+	<style>
+		body {
+			font-family: monospace;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.container {
+			margin: 50px auto;
+			width: 80%;
+			max-width: 600px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+		}
+
+		p {
+			margin: 20px 0;
+		}
+
+		.button {
+			background-color:rgb(148, 219, 42);
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			text-decoration: none;
+			display: inline-block;
+			margin-top: 20px;
+		}
+
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Exam Registration Submitted</h1>
+	<div class="container">
+		<p>Thank you for submitting your exam registration details. We will review your application and contact you shortly with further instructions.</p>
+        <center><a href="home.html" class="button">Go back to homepage</a></center>
+        <h1>Registration Complete</h1>
+        <p id="message"></p>
+		
+	</div>
+    <script src="mail.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+</body>
+</html>
+
+
